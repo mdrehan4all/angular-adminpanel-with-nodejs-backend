@@ -30,6 +30,7 @@ export class SignupComponent implements OnInit{
         message: string,
         token: string,
         status: string,
+        
       };
 
       let d = <responseData> data;

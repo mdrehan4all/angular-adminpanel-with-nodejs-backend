@@ -8,6 +8,25 @@
 <div class="container-fluid mt-2"> 
     <div style="width: 100%;padding:40px" class="text-start shadow">
         <h1 style="font-weight: 500;font-family: 'Josefin Sans'">Users</h1>
-        <p style="font-weight: 300;font-family: 'Josefin Sans'">Welcome to Admin Panel developed in Angular</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Creation Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let d of data">
+                    <td>{{ d.id }}</td>
+                    <td>{{ d.name }}</td>
+                    <td>{{ d.email }}</td>
+                    <td>{{ d.cdate }}</td>
+                    <td><button mat-button (click)="deleteUser(d.id)"><mat-icon>delete</mat-icon></button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
