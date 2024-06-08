@@ -1,0 +1,13 @@
+.wa{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    img{
+        border:1px solid #ffffff;
+        width: 75px;
+        height: 75px;
+        box-shadow: rgba(133, 133, 133, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 50%;
+    }
+}
