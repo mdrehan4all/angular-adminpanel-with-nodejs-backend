@@ -10,7 +10,8 @@ export class DataService {
 
   //baseurl = 'http://localhost/api/ngadminpanel-backend/';
   //baseurl = 'https://coderelisher.com/api/ngadminpanel-backend/';
-  baseurl = 'http://localhost:8080/';
+  //baseurl = 'http://localhost:8080/';
+  baseurl = 'https://coderelisher.com/nodejs-backend/';
 
   loginToken = new Subject<string>();
 
